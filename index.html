@@ -24,3 +24,122 @@
 
   </body>
 </html>
+  
+  <!doctype html>
+
+
+
+<style>
+.dropbtn {
+    	cursor: pointer; 
+pointer; font-size: 24px;  
+text-decoration: none; 
+padding:2px; 
+color:#4A99D9;
+background-color:#ffffff;  
+border-radius:3px; border: 0px; solid #000000;"
+}
+
+
+
+.dropdown {
+    display: inline-block;
+    position: fixed; /* Фиксированное положение */
+    left: 20px; /* Расстояние от правого края окна браузера */
+    top: 1%; /* Расстояние сверху */
+}
+
+.dropdown-content {
+    display: none;
+    position: auto;
+    background-color: #ffffff;
+    min-width: 250px;
+border-radius:5px; 
+border: 0px solid #000000;
+ line-height: 14px;
+    overflow: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;  
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.show {display: block;}
+</style>
+
+
+
+<h2></h2>
+<p></p>
+
+<div onclick="myFunction()" style="text-align:left" class="dropdown">
+<button " class="dropbtn" >+</button>
+  <div id="myDropdown"  class="dropdown-content">
+<br/>
+<br/>
+<br/>
+<p class="buttond"  style="text-align:center;"><a href="http://www.emiia.ru"><img alt="EMIIA" border="0" data-original-height="0" data-original-width="0" src="https://cdn.rawgit.com/EMIIA/608af2dd0e7c695739781bfbb593fefe/raw/f043f13c182dc24534729e1a1831625420c3b6fe/EMIIA%2520LINES.svg" title="EMIIA" /></a>
+
+<br/> 
+<p class="buttond"  style="text-align:"><a href="http://www.emiia.ru/" target="_self" style="cursor: pointer; font-size:12px;  text-decoration: none; padding:8px; color:#000000; background-color:#ffffff; border-radius:5px; border: 0px solid #000000;">ГЛАВНАЯ</a></p>
+
+
+<p class="buttond"  style="text-align:"><a href="http://www.emiia.ru/p/information-economy.html" target="_self" style="cursor: pointer; font-size:12px;  text-decoration: none; padding:8px; color:#000000; background-color:#ffffff; border-radius:3px; border: 0px solid #000000;">О НАС/КОНТАКТЫ</a></p>
+
+<p class="buttond"  style="text-align:"><a href="http://www.emiia.ru/p/emiia.html" target="_self" style="cursor: pointer; font-size:12px;  text-decoration: none; padding:8px; color:#000000; background-color:#ffffff; border-radius:3px; border: 0px solid #000000;">СМИ О ПРОЕКТЕ</a></p>
+
+<p class="buttond"  style="text-align:"><a href="http://emonocle.blogspot.ru/" target="_self" style="cursor: pointer; font-size:12px;  text-decoration: none; padding:8px; color:#000000; background-color:#ffffff; border-radius:3px; border: 0px solid #000000;">БЛОГ</a></p>
+
+
+
+<p class="buttond"  style="text-align:"><a href="http://www.emiia.ru/p/investor.html" target="_self" style="cursor: pointer; font-size:12px;  text-decoration: none; padding:8px; color:#000000; background-color:#ffffff; border-radius:3px; border: 0px solid #000000;">ИНВЕСТОРАМ</a></p>
+
+
+<p class="buttond"  style="text-align:left;"><a href="https://www.emiia.ru/p/emonocle.html" target="_self" style="cursor: pointer; font-size:12px;  text-decoration: none; padding:8px; color:#000000; background-color:#ffffff; border-radius:3px; border: 0px solid #000000;">MONOCLE /СЕНСОРНЫЕ ПАНЕЛИ/</a></p>
+
+&#160;&#160;&#160;&#160;&#160;&#160;<button class="button-primary button-big" id="sign-up-button" style="background-color: white; border-color: #4A99D9; border-style: solid; border-radius:3px; border-width: 1px; color: white; cursor: pointer; font-family: Helvetica, Arial, sans-serif; font-size: 15px; height: 50px; letter-spacing: 0.5px; line-height: 40px; margin: 38px 0px 20px; min-width: 200px; outline: none; padding: 4px 1.5em 0px; position: relative; text-transform: uppercase; width: auto;" type="submit"
+value="Registrar"><a href="https://docs.google.com/forms/d/1BGNXxOQpFsx6nr5stwI0WGP8zPd55kbOal_ndk0sJRk"><span style="color: #4A99D9">&#160;ПРЕДЗАКАЗ</span></a></button>
+<br/>
+<div class="buttond" style="text-align: left;">
+<a href="http://www.emiia.ru/" style="background-color: white; border-radius: 3px; border: 0px solid #000000; color: #4A99D9 cursor: pointer; font-size: 8px; padding: 4px; text-decoration: none;" target="_self">&#160;ВХОД | РЕГИСТРАЦИЯ</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+  </div>
+</p></div></div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+</!doctype>
