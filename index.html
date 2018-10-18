@@ -20,7 +20,7 @@
 Hide the label if placeholder is supported
 */
 body{
-  background:#b4b4b4;
+  background:#transparent;
 }
 #registration-form {
   font-family:'Open Sans Condensed', sans-serif;
@@ -30,27 +30,27 @@ body{
 	position: relative;
 }
 #registration-form .fieldset {
-	background-color:#d5d5d5;
+	background-color:#transparent;
 	border-radius: 3px;
   
 }
  #registration-form legend {
 	text-align: center;
-	background: #364351;
+	background: #transparent;
 	width: 100%;
-	padding: 30px 0;
-	border-radius: 3px 3px 0 0;
-	color: white;
-font-size:2em;
+	padding: 0px 0;
+	border-radius: 0px 0px 0 0;
+	color: black;
+font-size:3em;
 }
 .fieldset form{
-  border:1px solid #2f2f2f;
+  border:0px solid #2f2f2f;
   margin:0 auto;
   display:block;
   width:100%;
   padding:30px 20px;
   box-sizing:border-box;
-  border-radius:0 0 3px 3px;
+  border-radius:3px 3px 3px 3px;
 }
 .placeholder #registration-form label {
 	display: none;
@@ -59,7 +59,7 @@ font-size:2em;
 margin-left:5px;
   position:relative;
   display:block;
-  color:grey;
+  color:transparent;
   text-shadow:0 1px white;
   font-weight:bold;
 }
@@ -71,7 +71,7 @@ margin-left:5px;
 	padding: 15px 20px;
 	border-radius: 1px;
   margin:5px auto;
-  background-color:#f7f7f7;
+  background-color:#transparant;
 	border: 1px solid silver;
 	-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.2);
 	box-shadow: inset 0 1px 5px rgba(0,0,0,0.2), 0 1px rgba(255,255,255,.8);
@@ -95,7 +95,7 @@ transition:background-color .5s ease;
   background-color:white;
 }
 #registration-form input[type=submit] {
-  font-family:'Open Sans Condensed', sans-serif;
+  font-family:'Arial', arial;
   text-transform:uppercase;
   outline:none;
 	-webkit-box-sizing: border-box;
@@ -103,10 +103,10 @@ transition:background-color .5s ease;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
-	background-color: #5C8CA7;
+	background-color: #transparent;
 	padding: 10px;
-	color: white;
-	border: 1px solid #3498db;
+	color: #3498db;
+	border: 3px solid #3498db;
 	border-radius: 3px;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -116,14 +116,14 @@ transition:background-color .5s ease;
   top:0;
 }
 #registration-form input[type=submit]:hover {
-	background-color: #2980b9;
+	background-color: #transparent;
 }
 #registration-form input[type=submit]:active {
-background:#5C8CA7;
+background:#transparent;
 }
 .parsley-error-list{
 background-color:#C34343;
-padding: 5px 11px;
+padding: 5px 20px;
 margin: 0;
 list-style: none;
 border-radius: 0 0 3px 3px;
@@ -165,10 +165,10 @@ margin-top:-5px;
 
     <div id="registration-form">
 	<div class='fieldset'>
-    <legend>ЭМИИА | EMIIA</legend>
+    <legend>EMIIA</legend>
 		<form method="post" action="submit" name="myform">
 			<div class='row'>
-				<label for='firstname'>First Name</label>
+				<label for='firstname'></label>
 				<input type="text" placeholder="First Name" name='first_name' id='firstname' data-required="true" data-error-message="Your First Name is required">
 			</div>
 			<div class='row'>
@@ -179,7 +179,7 @@ margin-top:-5px;
 				<label for="email_again"></label>
 				<input type="text" placeholder="Code" name='email_again' data-required="true" data-error-message="Your E-mail must correspond">
 			</div>
-			<input type="submit" value="Register">
+			<input type="submit" value="CONFIRM">
 		</form>
 	</div>
 </div>
@@ -192,3 +192,4 @@ margin-top:-5px;
     
   </body>
 </html>
+
