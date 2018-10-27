@@ -1,195 +1,481 @@
 
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Neat form</title>
-    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-
-
-    
-    
-    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300'>
-
-        <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      /* BTW alt-shift will pop a color picker 
-  example color: followed  by alt shift will pop it
-*/
-/*
-Hide the label if placeholder is supported
-*/
-body{
-  background:#transparent;
-}
-#registration-form {
-  font-family:'Open Sans Condensed', sans-serif;
-	width: 400px;
-  min-width:250px;
-	margin: 20px auto;
-	position: relative;
-}
-#registration-form .fieldset {
-	background-color:#transparent;
-	border-radius: 3px;
-  
-}
- #registration-form legend {
-	text-align: center;
-	background: #transparent;
-	width: 100%;
-	padding: 0px 0;
-	border-radius: 0px 0px 0 0;
-	color: black;
-font-size:3em;
-}
-.fieldset form{
-  border:0px solid #2f2f2f;
-  margin:0 auto;
-  display:block;
-  width:100%;
-  padding:30px 20px;
-  box-sizing:border-box;
-  border-radius:3px 3px 3px 3px;
-}
-.placeholder #registration-form label {
-	display: none;
-}
- .no-placeholder #registration-form label{
-margin-left:5px;
-  position:relative;
-  display:block;
-  color:transparent;
-  text-shadow:0 1px white;
-  font-weight:bold;
-}
-/* all */
-::-webkit-input-placeholder { text-shadow:1px 1px 1px white; font-weight:bold; }
-::-moz-placeholder { text-shadow:0 1px 1px white; font-weight:bold; } /* firefox 19+ */
-:-ms-input-placeholder { text-shadow:0 1px 1px white; font-weight:bold; } /* ie */
-#registration-form input[type=text] {
-	padding: 15px 20px;
-	border-radius: 1px;
-  margin:5px auto;
-  background-color:#transparant;
-	border: 1px solid silver;
-	-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.2);
-	box-shadow: inset 0 1px 5px rgba(0,0,0,0.2), 0 1px rgba(255,255,255,.8);
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-  -webkit-transition:background-color .5s ease;
--moz-transition:background-color .5s ease;
--o-transition:background-color .5s ease;
--ms-transition:background-color .5s ease;
-transition:background-color .5s ease;
-}
-.no-placeholder #registration-form input[type=text] {
-	padding: 10px 20px;
-}
-#registration-form input[type=text]:active, .placeholder #registration-form input[type=text]:focus {
-	outline: none;
-	border-color: silver;
-  background-color:white;
-}
-#registration-form input[type=submit] {
-  font-family:'Arial', arial;
-  text-transform:uppercase;
-  outline:none;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
-	background-color: #transparent;
-	padding: 10px;
-	color: #3498db;
-	border: 3px solid #3498db;
-	border-radius: 3px;
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-top: 5px;
-	cursor: pointer;
-  position:relative;
-  top:0;
-}
-#registration-form input[type=submit]:hover {
-	background-color: #transparent;
-}
-#registration-form input[type=submit]:active {
-background:#transparent;
-}
-.parsley-error-list{
-background-color:#C34343;
-padding: 5px 20px;
-margin: 0;
-list-style: none;
-border-radius: 0 0 3px 3px;
-margin-top:-5px;
-  margin-bottom:5px;
-  color:white;
-  border:1px solid #870d0d;
-  border-top:none;
-    -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  position:relative;
-  top:-1px;
-  text-shadow:0px 1px 1px #460909;
-    font-weight:700;
-  font-size:12px;
-}
-.parsley-error{
-	border-color:#870d0d!important;
-  border-bottom:none;
-}
-#registration-form select{
-	width:100%;
-	padding:5px;
-}
-::-moz-focus-inner {
-  border: 0;
-}
-    </style>
-
-    
-        <script src="js/prefixfree.min.js"></script>
-
-    
-    
-  </head>
-
-  <body>
-
-    <div id="registration-form">
-	<div class='fieldset'>
-    <legend>EMIIA</legend>
-		<form method="post" action="submit" name="myform">
-			<div class='row'>
-				<label for='firstname'></label>
-				<input type="text" placeholder="First Name" name='first_name' id='firstname' data-required="true" data-error-message="Your First Name is required">
-			</div>
-			<div class='row'>
-				<label for="email"></label>
-				<input type="text" placeholder="E-mail"  name='email' data-required="true" data-type="email" data-error-message="Your E-mail is required">
-			</div>
-			<div class='row'>
-				<label for="email_again"></label>
-				<input type="text" placeholder="Code" name='email_again' data-required="true" data-error-message="Your E-mail must correspond">
-			</div>
-			<input type="submit" value="CONFIRM">
-		</form>
-	</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="separator" style="clear: both; text-align: center;">
 </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/parsley.js/1.2.2/parsley.min.js'></script>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div class="separator" style="clear: both;">
+&nbsp; &nbsp;&nbsp;</div>
+<div class="separator" style="clear: both;">
 
-        <script src="js/index.js"></script>
+</div>
+<div class="separator" style="clear: both;">
 
-    
-    
-  </body>
-</html>
+</div>
+<div class="separator" style="clear: both;">
+<a gt="" href="http://www.emiia.ru/p/emonocle.html" span="" style="background-color: white; color: black; font-size: x-large;"><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif;">MONOCLE</span></a></div>
+<div class="separator" style="clear: both;">
+<span style="background-color: white; color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">
+</span></div>
+<div class="separator" style="clear: both;">
+<span style="background-color: white; color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">Когнитивная сеть&nbsp;</span><span style="background-color: white; color: #777777; font-size: 14px; margin: 0px; padding: 0px;"><a href="https://www.emiia.ru/p/ai.html" style="font-size: medium;"><span style="color: black; font-family: &quot;trebuchet ms&quot; , sans-serif;">ЭМИИА</span></a><span style="font-family: &quot;trebuchet ms&quot; , sans-serif;">&nbsp;с функцией</span></span></div>
+<span style="background-color: white; color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">&nbsp;машинного зрения&nbsp;</span><span style="background-color: white; color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">(радиооптика)&nbsp;</span>
+<span style="background-color: white; color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">на аппаратной&nbsp;</span><span style="background-color: white; color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">платформе&nbsp;</span><span style="background-color: white; color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">Панелей&nbsp;</span>
+<a href="https://www.emiia.ru/p/ai.html"><span style="color: black; font-family: &quot;trebuchet ms&quot; , sans-serif;">MONOCLE</span></a>
+<span style="background-color: white; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">
+</span></div>
+<div class="separator" style="clear: both;">
 
+</div>
+<div style="font-family: &quot;times new roman&quot;; margin: 0px; padding: 0px;">
+<hr style="border-bottom-color: rgb(229, 229, 229); border-bottom-style: solid; border-left: 0px; border-right: 0px; border-top: 0px; clear: both; height: 0px; margin: 0px 0px 20px; padding: 0px;" />
+<div style="margin: 0px; padding: 0px;">
+<br style="margin: 0px; padding: 0px;" /> <span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">Модельный ряд </span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">Панелей&nbsp;</span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">доступных&nbsp;</span>
+<span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">для&nbsp;</span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">предварительного&nbsp;</span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">заказа&nbsp;</span>
+<span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">(осень 2019 г.).</span>
+<span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">Сенсорные Панели форм-фактор</span>
+<span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">&nbsp;</span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">выключателей&nbsp;</span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">электроламп,&nbsp;</span>
+<span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">электрических розеток и&nbsp;</span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">электроблоков</span><span style="color: #777777; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: 14px; margin: 0px; padding: 0px;">.</span></div>
+
+</div>
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+<a href="https://1.bp.blogspot.com/-CxwwJD8dhbs/W7jA3ZDF4hI/AAAAAAAAF5E/9iZkwwmZnuspthQBgiiak74MMi9Ic3NagCLcBGAs/s1600/p2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="663" data-original-width="1600" height="264" src="https://1.bp.blogspot.com/-CxwwJD8dhbs/W7jA3ZDF4hI/AAAAAAAAF5E/9iZkwwmZnuspthQBgiiak74MMi9Ic3NagCLcBGAs/s640/p2.png" width="640" /></a></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+<a href="https://2.bp.blogspot.com/-4Ev-fNfhUnk/W7uOz9K2joI/AAAAAAAAF7I/O1R1Qhasjg0isv3B5Ql8f9PSql2EpOqfgCLcBGAs/s1600/p10.png"><img alt="https://2.bp.blogspot.com/-4Ev-fNfhUnk/W7uOz9K2joI/AAAAAAAAF7I/O1R1Qhasjg0isv3B5Ql8f9PSql2EpOqfgCLcBGAs/s1600/p10.png" border="0" data-original-height="900" data-original-width="1600" height="360" src="https://2.bp.blogspot.com/-4Ev-fNfhUnk/W7uOz9K2joI/AAAAAAAAF7I/O1R1Qhasjg0isv3B5Ql8f9PSql2EpOqfgCLcBGAs/s1600/p10.png" style="font-family: &quot;times new roman&quot;;" width="640" /></a></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+<a href="https://4.bp.blogspot.com/-DermPKblr0k/W7pXobWKlUI/AAAAAAAAF6k/F5t8x4TnKcwHI0dMurU04IGgKATJD_b0QCLcBGAs/s1600/emiia%2Bhar.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+</a></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://avatars.mds.yandex.net/get-pdb/1043578/1b94a7a2-7776-420b-a6df-9d94973d78bb/s1200" width="640" /></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-PedfxLOOFR4/W8bNO7rU4gI/AAAAAAAAF9g/rpCSPDGMgS4VQppyBbu6GKE12g3J1dECQCLcBGAs/s1600/emiia%2Bhar.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" data-original-height="1600" data-original-width="1559" height="640" src="https://1.bp.blogspot.com/-PedfxLOOFR4/W8bNO7rU4gI/AAAAAAAAF9g/rpCSPDGMgS4VQppyBbu6GKE12g3J1dECQCLcBGAs/s640/emiia%2Bhar.png" width="622" /></a><a href="https://1.bp.blogspot.com/-PedfxLOOFR4/W8bNO7rU4gI/AAAAAAAAF9g/rpCSPDGMgS4VQppyBbu6GKE12g3J1dECQCLcBGAs/s1600/emiia%2Bhar.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;">
+</a></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+<a href="https://3.bp.blogspot.com/-glbzq6kt2FQ/W7kInlWIE-I/AAAAAAAAF54/7JQapDpGd_Y4ito8VWsmuchkDBfwO-__gCLcBGAs/s1600/monocle%2Bnew%2B8.png" imageanchor="1" style="font-size: 18.72px; font-weight: 700; margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1214" data-original-width="1600" height="484" src="https://3.bp.blogspot.com/-glbzq6kt2FQ/W7kInlWIE-I/AAAAAAAAF54/7JQapDpGd_Y4ito8VWsmuchkDBfwO-__gCLcBGAs/s640/monocle%2Bnew%2B8.png" width="640" /></a></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://1.bp.blogspot.com/-qXgNG-lOLhE/W7aCWr8oVzI/AAAAAAAAF0g/ACe49fSIvt8xQPBkRDXFyelGJDvUCrLqACLcBGAs/s640/monocle%2Bnew.png" style="font-family: &quot;times new roman&quot;;" width="640" /></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+<a href="https://2.bp.blogspot.com/-QDwyIN11EME/W7iV9oBceCI/AAAAAAAAF3M/OZ-ZPQSZmOkboiuDTD7uZhsXuduSh4POgCLcBGAs/s1600/%25D0%25A1%25D0%25A0%25D0%2590%25D0%2592%25D0%259D%25D0%2595%25D0%259D%25D0%2598%25D0%2595.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="725" data-original-width="1600" height="290" src="https://2.bp.blogspot.com/-QDwyIN11EME/W7iV9oBceCI/AAAAAAAAF3M/OZ-ZPQSZmOkboiuDTD7uZhsXuduSh4POgCLcBGAs/s640/%25D0%25A1%25D0%25A0%25D0%2590%25D0%2592%25D0%259D%25D0%2595%25D0%259D%25D0%2598%25D0%2595.png" width="640" /></a></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div>
+<div style="background-color: white; text-transform: none;">
+<a href="http://emiia.ru/" style="border-radius: 15px; border: 0px solid rgb(0, 0, 0); color: black; cursor: pointer; font-family: arial; font-size: 12px; margin: 0px; padding: 8px;" target="_self">ВАРИАНТЫ ЭКСПЛУАТАЦИИ ПАНЕЛЕЙ</a></div>
+
+<div style="text-align: left;">
+1) Online. Облачная платформа/программно-аппаратная база: модуль #emonocle.</div>
+<div style="text-align: left;">
+
+</div>
+<div style="text-align: left;">
+2) Offline. Центральное устройство (сенсорная панель) аппаратная архитектура ARM Cortex, периферийные устройства на программно-аппаратной платформе микроконтроллерного модуля #emonocle. В данном случае все операции, в том числе и обучение нейронной сети осуществляется в автономном режиме, без подключения к Интернет. Вычисления и хранение информации производится локально.
+
+3)&nbsp;Offline 2 (Two modes). Программно-аппаратная база: модуль #emonocle. Два автономных режима функционирования: Ручное управления посредством контактного сенсора на Панели, устройство не подключено к локальной сети и Интернет, система детекции движения отключена; Ручное управление посредством контактного сенсора Панели, устройство не подключено к локально сети и Интернет, система детекции движения функционирует.</div>
+</div>
+<div style="text-align: left;">
+
+</div>
+<div style="text-align: left;">
+
+</div>
+<div style="text-align: left;">
+- Прошивка #emonocle для работы под управлением внешнего контроллера. В прошивке реализовано задание параметров работы через внешний контроллер UART.</div>
+<div style="text-align: left;">
+
+</div>
+<div style="text-align: left;">
+- Прошивка #emonocle для Интернета вещей на основе скриптового языка Basic.</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div style="background-color: white; text-align: center; text-transform: none;">
+<div style="text-align: center;">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div class="separator" style="clear: both; color: #777777; font-size: 18.72px; text-align: left;">
+<span class="icon-shim" style="color: #0070c9; font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: 17px; letter-spacing: -0.374px;"><a class="more" data-analytics-region="learn more" href="https://docs.google.com/forms/d/1BGNXxOQpFsx6nr5stwI0WGP8zPd55kbOal_ndk0sJRk/edit" style="color: #0070c9; letter-spacing: -0.374px;">Стоимость от 500 рублей</a></span></div>
+<div class="separator" style="clear: both; color: #777777; text-align: left;">
+<span style="color: #777777; font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; margin: 0px; padding: 0px; text-align: center;"><a class="more" data-analytics-region="learn more" href="https://docs.google.com/forms/d/1BGNXxOQpFsx6nr5stwI0WGP8zPd55kbOal_ndk0sJRk/edit" style="color: #0070c9; font-size: 17px; letter-spacing: -0.374px; text-align: left;">предварительный заказ &gt;</a>&nbsp;</span></div>
+<div class="separator" style="clear: both;">
+</div>
+<div style="text-align: left;">
+<span style="color: #777777; font-family: &quot;roboto&quot; , &quot;arial&quot; , sans-serif; font-size: xx-small; margin: 0px; padding: 0px;">Платежная/накопительная карта&nbsp;</span><a href="http://www.emiia.ru/p/piligrim.html" style="color: #646464; font-family: roboto, arial, sans-serif; font-size: x-small; margin: 0px; padding: 0px;"><span style="color: black; margin: 0px; padding: 0px;">PILiGRIM</span></a><span style="color: #777777; font-family: &quot;roboto&quot; , &quot;arial&quot; , sans-serif; font-size: xx-small; margin: 0px; padding: 0px;">&nbsp;в подарок</span></div>
+</div>
+</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<h3 class="landing-block-node-card-title h6 text-uppercase g-font-weight-700 g-color-white g-mt-minus-35 g-mb-15" style="box-sizing: inherit; line-height: 1.4; margin-bottom: 1.07143rem; margin-top: -2.5rem;">
+<div class="buttond" style="line-height: 26px; padding: 0px;">
+<div style="text-align: center;">
+<div class="buttond" style="line-height: 26px; padding: 0px;">
+<div style="text-align: center;">
+<div class="separator" style="clear: both; color: #777777; font-size: 18.72px; font-weight: 400; text-align: left;">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<h3 class="landing-block-node-card-title h6 text-uppercase g-font-weight-700 g-color-white g-mt-minus-35 g-mb-15" style="box-sizing: inherit; line-height: 1.4; margin-bottom: 1.07143rem; margin-top: -2.5rem;">
+<div class="buttond" style="line-height: 26px; padding: 0px;">
+<div style="text-align: center;">
+<div class="buttond" style="line-height: 26px; padding: 0px;">
+<div style="text-align: center;">
+<div class="separator" style="clear: both; color: #777777; font-size: 18.72px; font-weight: 400; text-align: left;">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="separator" style="clear: both;">
+</div>
+<div class="separator" style="clear: both;">
+</div>
+<div class="separator" style="clear: both;">
+</div>
+<div class="separator" style="clear: both;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="background-color: white; text-align: left; text-transform: none;">
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+
+</div>
+</div>
+<div style="background-color: white; text-align: center; text-transform: none;">
+<a href="http://emiia.ru/" style="border-radius: 15px; border: 0px solid rgb(0, 0, 0); color: black; cursor: pointer; font-family: arial; font-size: 12px; margin: 0px; padding: 8px;" target="_self">ГЛОССАРИЙ</a></div>
+<div style="background-color: white; text-align: center; text-transform: none;">
+<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">Программно-аппаратной базой Панелей служит микроконтроллерный модуль #emonocle (#emonocle TECHNOLOGY) собственной топологии, применяется для задач:</span>
+<div style="text-align: left;">
+<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">- Детекции движения людей, объектов и веществ сквозь бетонные стены и иные радиопрозрачные материалы;</span></div>
+<div style="text-align: left;">
+<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">- Вычисления координат динамических объектов посредством направленных разнесенных групп антенн MIMO Wi-Fi IEEE 802.11g (&gt;20 dBm);</span></div>
+<div style="text-align: left;">
+<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">- Развертывания самоорганизующейся сетевой инфраструктуры Wi-Fi (Wireless mesh network) сетевой протокол Cjdns IPv6;&nbsp;</span></div>
+<div style="text-align: left;">
+<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">- Организации коммуникационной GSM платформы (MVNO IoT - виртуальный мобильный оператор Интернета вещей).</span></div>
+<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">
+</span><span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;">Устройства Monocle образуют самоорганизующуюся ячеистую Wi-Fi сеть (Wireless Mesh Network) VPN/P2P/M2M/WLAN/LAN–IPv6 и служат узлами распределенной вычислительной сети и базы данных.</span></div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-transform: none;">
+
+</div>
+<div style="background-color: white; font-family: &quot;times new roman&quot;; margin: 0px; padding: 0px; text-transform: none;">
+<hr style="border-bottom-color: rgb(229, 229, 229); border-bottom-style: solid; border-left: 0px; border-right: 0px; border-top: 0px; clear: both; height: 0px; margin: 0px 0px 20px; padding: 0px;" />
+<div style="margin: 0px; padding: 0px;">
+</div>
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; text-align: center; text-transform: none;">
+
+</div>
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+
+</div>
+<div class="separator" style="background-color: white; clear: both; font-family: arial;">
+<span style="font-family: &quot;arial&quot; , &quot;helvetica&quot; , sans-serif; font-size: x-small;"><a href="http://emiia.ru/" style="border-radius: 15px; border: 0px solid rgb(0, 0, 0); color: black; cursor: pointer; font-family: arial; font-size: 12px; margin: 0px; padding: 8px;" target="_self">ПРОТОТИПЫ</a></span></div>
+<div class="separator" style="background-color: white; clear: both; font-size: 18.72px;">
+<span style="color: #666666; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: small;">Предсерийные (тестовые) модели</span></div>
+<div class="separator" style="background-color: white; clear: both; font-size: 18.72px;">
+<span style="color: #666666; font-family: &quot;trebuchet ms&quot; , sans-serif; font-size: small;">
+</span></div>
+<div class="separator" style="clear: both; text-align: center;">
+
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-uLpGgAqetT0/W7fWPLpK5JI/AAAAAAAAF1k/ffDcG82lIZ4cO41kF9fUA9Gc9W2Ay4cmwCLcBGAs/s1600/%25D0%259F%25D0%2590%25D0%259D%25D0%2595%25D0%259B%25D0%2598%2B%25D0%25A0%25D0%2590%25D0%2597%25D0%259C%25D0%2595%25D0%25A0%25D0%25AB%2B%25D0%259A%25D0%2592%25D0%2590%25D0%2594%25D0%25A0%2B3.png" imageanchor="1" style="background-color: white; clear: left; font-size: 18.72px; margin-bottom: 1em; margin-right: 1em;"><img border="0" data-original-height="1044" data-original-width="1600" height="416" src="https://3.bp.blogspot.com/-uLpGgAqetT0/W7fWPLpK5JI/AAAAAAAAF1k/ffDcG82lIZ4cO41kF9fUA9Gc9W2Ay4cmwCLcBGAs/s640/%25D0%259F%25D0%2590%25D0%259D%25D0%2595%25D0%259B%25D0%2598%2B%25D0%25A0%25D0%2590%25D0%2597%25D0%259C%25D0%2595%25D0%25A0%25D0%25AB%2B%25D0%259A%25D0%2592%25D0%2590%25D0%2594%25D0%25A0%2B3.png" width="640" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both;">
+</div>
+<div class="separator" style="clear: both;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://3.bp.blogspot.com/-0AvuJsBohhA/W0hpkF5AVyI/AAAAAAAAFb4/WIijXbdNwws12NaUe5KKlJM4GJbg1i3mACLcBGAs/s1600/%25D0%25B4%25D0%25B2%25D0%25B5%2B%25D0%25BF%25D0%25B0%25D0%25BD%25D0%25B5%25D0%25BB%25D0%25B8.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="901" data-original-width="1600" height="360" src="https://3.bp.blogspot.com/-0AvuJsBohhA/W0hpkF5AVyI/AAAAAAAAFb4/WIijXbdNwws12NaUe5KKlJM4GJbg1i3mACLcBGAs/s640/%25D0%25B4%25D0%25B2%25D0%25B5%2B%25D0%25BF%25D0%25B0%25D0%25BD%25D0%25B5%25D0%25BB%25D0%25B8.png" width="640" /></a></div>
+<div style="clear: both;">
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-LSj-Trswhf0/W1YZckLsdII/AAAAAAAAFfo/xyvOlY8L43kM5qQY5tM-YXWzf6b9QsW_wCLcBGAs/s1600/scanning%2Bsystem%2Bdinamic.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" data-original-height="901" data-original-width="1600" height="360" src="https://1.bp.blogspot.com/-LSj-Trswhf0/W1YZckLsdII/AAAAAAAAFfo/xyvOlY8L43kM5qQY5tM-YXWzf6b9QsW_wCLcBGAs/s640/scanning%2Bsystem%2Bdinamic.png" width="640" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/-c0-pfOIneKc/W7yKSFADB6I/AAAAAAAAF8Y/WYhJ0lU4yGkIMQVU2h5Uuiqd4zT8RdCcQCLcBGAs/s1600/receiver.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="901" data-original-width="1600" height="360" src="https://4.bp.blogspot.com/-c0-pfOIneKc/W7yKSFADB6I/AAAAAAAAF8Y/WYhJ0lU4yGkIMQVU2h5Uuiqd4zT8RdCcQCLcBGAs/s640/receiver.png" width="640" /></a></div>
+
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div style="text-align: center;">
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div style="text-align: left;">
+<div class="separator" style="clear: both; text-align: center;">
+<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/cHT3bFJCbSo?rel=0&amp;controls=0&amp;showinfo=0" width="560"></iframe>
+</div>
+<div style="text-align: center;">
+<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/6426uCYPEjg?rel=0&amp;controls=0&amp;showinfo=0" width="560"></iframe>
+
+
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: left;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both;">
+
+</div>
+<div class="separator" style="clear: both;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://2.bp.blogspot.com/-2CQkwfUaakU/W0TUiKyV3LI/AAAAAAAAFXs/_bT3-d0ueWgKv9sxYGEhFBGdB5eaOC4pwCLcBGAs/s1600/1.png" width="640" /></div>
+<div class="separator" style="clear: both;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://2.bp.blogspot.com/-DjwYu3ktcb0/W0TUiE2fGcI/AAAAAAAAFXo/TXcRgWv21m0vbIWbX27oDkNdD1qOynjcQCLcBGAs/s1600/2.png" width="640" /></div>
+<img alt="PILiGRIM" height="65" src="https://cdn.rawgit.com/EMIIA/376710e1970248966a2db342e35fbc30/raw/e6856752c6ebdb32a22e270ecb5fe68aec7b8ac8/sensor.svg" title="" width="200" />
+<div class="separator" style="clear: both;">
+</div>
+
+
+<div class="separator" style="clear: both;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://3.bp.blogspot.com/-f7uc4WlVmaY/W0TUiA7EHDI/AAAAAAAAFXw/VVLmI3cdo58YtHGPKYoKoRrxrqO3uGVlwCLcBGAs/s1600/3.png" width="640" /></div>
+<div class="separator" style="clear: both;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://3.bp.blogspot.com/-ihovz1ECsZw/W0TUjIj1BYI/AAAAAAAAFX0/ZwAJ4yd76Ow7YQM2RvNK7G4J06i7mQ-MwCLcBGAs/s1600/4.png" width="640" /></div>
+<div class="separator" style="clear: both;">
+<img alt="PILiGRIM" height="65" src="https://cdn.rawgit.com/EMIIA/bddc4bc84147b6a8f17b977f437aa43f/raw/be15d226a0aa8190a144cd4fc02fb965a7ce0d51/yandex.svg" title="" width="200" /></div>
+<div class="separator" style="clear: both;">
+
+</div>
+<div class="separator" style="clear: both;">
+</div>
+<div class="separator" style="clear: both;">
+<a href="https://cdn.rawgit.com/EMIIA/7227deb0d2aa8373ae6718154b10be9b/raw/66b56637635bbc9183e8dedc409a301916521b33/iphone%25202.svg" style="background-color: white; font-family: roboto, arial, sans-serif; font-size: x-small;"><img alt="ЭМИИА" black="" color:="" font-family:="" font-size:="" imes="" medium="" new="" quot="" roman="" src="https://cdn.rawgit.com/EMIIA/7227deb0d2aa8373ae6718154b10be9b/raw/66b56637635bbc9183e8dedc409a301916521b33/iphone%25202.svg" style="color: black; font-family: &quot;times new roman&quot;; font-size: medium;" title="" /></a></div>
+<div class="separator" style="clear: both;">
+
+</div>
+<div class="separator" style="clear: both;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://1.bp.blogspot.com/-7pbCOS2mLZc/W0TUjLUCbMI/AAAAAAAAFX4/94UOGBq7_W47qJFHItEUQHKwFw8fuViHwCLcBGAs/s1600/5.png" width="640" /></div>
+<div class="separator" style="clear: both;">
+<img border="0" data-original-height="900" data-original-width="1600" height="360" src="https://4.bp.blogspot.com/-8CEsG1h6sEA/W0TUjV5P2XI/AAAAAAAAFX8/W1ftw7boDkMcCRjunN0cP1lCX8CSypeRwCLcBGAs/s1600/6.png" width="640" /></div>
+<div class="separator" style="clear: both;">
+<img alt="PILiGRIM" height="62" src="https://cdn.rawgit.com/EMIIA/3687405c55e72a3c0de81c12bec1eb2c/raw/c08bb4eb13fba7d2d0dbfce1f86919e984628115/EMIIA%2520ID.svg" title="" width="200" /></div>
+<div class="separator" style="clear: both;">
+
+</div>
+<div class="separator" style="clear: both;">
+
+</div>
+<div class="separator" style="clear: both;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both;">
+
+</div>
+<div class="separator" style="clear: both;">
+<u style="text-align: center;"><span style="font-size: x-small;">2 Функции системы, дизайн устройств и сроки поставки могут быть изменены в одностороннем порядке по усмотрению разработчиков. В базовую комплектацию устройств не входит GSM модуль, микрофон, динамик и датчики CO/CO2. Система и ее элементы находиться в</span></u><u style="text-align: center;"><span style="font-size: x-small;">&nbsp;процессе оформления интеллектуальной собственности, полное описание на данный момент не доступно.&nbsp;</span></u><u style="text-align: center;"><span style="font-size: x-small;">На интернет-ресурсе представлены прототипы, предсерийные и крупносерийные образцы. Проект проходит закрытое альфа тестирование.</span></u><u style="text-align: center;"><span style="font-size: x-small;">&nbsp;</span></u></div>
+<div class="separator" style="clear: both;">
+<u style="text-align: center;"><span style="font-size: x-small;">
+</span></u></div>
+<div class="separator" style="clear: both;">
+<u style="text-align: center;"><span style="font-size: x-small;">
+</span></u></div>
+<div class="separator" style="clear: both;">
+<u style="text-align: center;"><span style="font-size: x-small;">
+</span></u></div>
+<div class="separator" style="clear: both;">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align: center;">
+<div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align: justify;">
+<div style="text-align: center;">
+<div style="text-align: center;">
+<div class="separator" style="clear: both;">
+</div>
+</div>
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
