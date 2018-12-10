@@ -1,0 +1,22 @@
+<Motion duration="16" xmlns="fl.motion.*" xmlns:geom="flash.geom.*" xmlns:filters="flash.filters.*">
+	<source>
+		<Source frameRate="24" x="700.2" y="700.5" scaleX="1" scaleY="1" rotation="0" elementType="graphic" symbolName="Symbol 7">
+			<dimensions>
+				<geom:Rectangle left="-12.5" top="-12.5" width="25.05" height="25.05"/>
+			</dimensions>
+			<transformationPoint>
+				<geom:Point x="0.5169660678642715" y="0.48303393213572854"/>
+			</transformationPoint>
+		</Source>
+	</source>
+
+	<Keyframe index="0" zDepth="0" tweenSnap="true">
+		<tweens>
+		</tweens>
+	</Keyframe>
+
+	<Keyframe index="15" zDepth="0" tweenSnap="true" x="9.799999999999955" y="-6.899999999999977" scaleX="16.012" scaleY="16.012">
+		<tweens>
+		</tweens>
+	</Keyframe>
+</Motion>
