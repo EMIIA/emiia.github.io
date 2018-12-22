@@ -25,7 +25,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4567012"
+     inkscape:zoom="5.8268047"
      inkscape:cx="64.427303"
      inkscape:cy="3.2417853"
      inkscape:document-units="mm"
@@ -70,7 +70,8 @@
     <g
        aria-label="КУПИТЬ"
        style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#cc9933;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       id="text830">
+       id="text830"
+       transform="translate(0,-0.18163185)">
       <path
          d="m 18.272377,105.62374 h -0.34451 v 1.1765 h -0.211873 v -2.50803 h 0.211873 v 1.15066 h 0.334174 l 0.969795,-1.15066 h 0.266995 l -1.030084,1.23334 1.105876,1.27469 h -0.26355 z"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52777767px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#cc9933;fill-opacity:1;stroke-width:0.26458332"
