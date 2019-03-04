@@ -123,6 +123,10 @@
            inkscape:connector-type="polyline"
            inkscape:connector-curvature="0" />
       </g>
+       <div dir="ltr" style="text-align: center;" trbidi="on">
+<svg class="button" expanded="true" height="50px" width="50px"> <circle class="innerCircle" cx="50%" cy="50%" fill="rgba(0, 0, 0, 1)" r="30%" stroke-width="none" stroke="none">
+
+ <animate attributename="opacity" attributetype="CSS" begin="0s" dur="1.5s" from="1" repeatcount="indefinite" to="0">/></a></animate> </circle> </svg></div>
     </g>
   </g>
 </svg>
