@@ -1,7 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTPS_HOST} emiia.github.io
-RewriteRule (.*) https://www.emiia.ru/$1 [R=301,L]
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} emiia.github.io
-RewriteRule (.*) https://www.emiia.ru/$1 [R=301,L]
