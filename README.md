@@ -1,3 +1,0 @@
-upload.emiia.ru
-
-ЭМИИА
