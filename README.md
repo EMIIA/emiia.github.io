@@ -52,17 +52,11 @@
 <br/>
 <br/>
 
-<br/>
-<br/>
-<br/>
 https://emiia.ru
 <br/>
 <br/>
 <br/>
 
-<br/>
-<br/>
-<br/>
 
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <span style="font-family: Arial; font-size: x-small;">© 2019 ЭМИИА<a href="https://www.emiia.ru/p/confidentiality.html"><span style="color: black;"></span></a></span></div>
