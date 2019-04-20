@@ -9,9 +9,6 @@
     <meta charset="UTF-8">
 
 
-  
-	  <br/>
-<br/>
 
 <div class="separator" style="clear: both; text-align: center;">
 <a href="https://www.emiia.ru"><img alt="EMIIA" border="0" height="50" width="150" src="https://emiia.github.io/1/monocle12.svg" title="EMIIA" /></a></div>
