@@ -21,7 +21,7 @@
  Встраиваемые электромеханические и программно-аппаратные решения c интегрированным самообновляющимся ПО и автономной нейронной сетью для задач автоматизации и машинного зрения на принципах когнитивной радиооптики.<a href="https://www.emiia.ru/p/confidentiality.html"><span style="color: black;"></span></a></span></div>
 <div dir="ltr" style="text-align: center;" trbidi="on">
 <span style="font-family: Arial; font-size: small;">
- 60 % снижение капитальных и операционных затрат в IoT/IIoT (автоматизация, информационная безопасность, Industry 4.0).<a href="https://www.emiia.ru/p/confidentiality.html"><span style="color: black;"></span></a></span></div>
+ 60 % снижение капитальных и операционных затрат в IoT/IIoT (автоматизация, информационная безопасность, цифровые двойники, Industry 4.0).<a href="https://www.emiia.ru/p/confidentiality.html"><span style="color: black;"></span></a></span></div>
 
 
 <br/>
