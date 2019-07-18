@@ -162,3 +162,26 @@ font-family: Times;
 <br/>
 <br/>
 <br/>
+	  
+	  <div z-index: 2;">
+<script type='text/javascript'>
+(function () {
+    window['yandexChatWidgetCallback'] = function() {
+        try {
+            window.yandexChatWidget = new Ya.ChatWidget({                
+guid: '48441f6e-97b0-43b4-bb68-d5e97cc2b743',
+                buttonText: '',
+                title: 'ЭМИИА',
+                theme: 'dark',
+                collapsedDesktop: 'never',
+                collapsedTouch: 'always'
+            });
+        } catch(e) { }
+    };
+    var n = document.getElementsByTagName('script')[0],
+        s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://chat.s3.yandex.net/widget.js';
+    n.parentNode.insertBefore(s, n);
+})();
+</script></div>
